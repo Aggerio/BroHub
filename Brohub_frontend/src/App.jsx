@@ -1,12 +1,14 @@
 import React from 'react'
+import Navbar from './components/Main/Navbar'
+import Landing from './components/Main/Landing'
 
-
-function App() {
-  return(
-    <div className='w-full h-screen bg-zinc'>
-
+const App = () => {
+  return (
+    <div className='w-full h-full bg-zinc-900 text-white overflow-y-hidden'>
+      <Navbar/>
+      <Landing/>
     </div>
   )
 }
 
-export default App;
+export default App
