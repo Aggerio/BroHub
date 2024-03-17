@@ -1,6 +1,7 @@
 from flask import Flask, request, send_file
 from flask_cors import CORS
 import os
+import gp
 import json
 
 app = Flask(__name__)
@@ -16,6 +17,9 @@ def get_image(filename):
     else: 
         return "Image not Found", 404
 
+@app.route("/post/<id>")
+def get_post(id):
+    return "post data", 200
 
 @app.route('/home', methods=['GET'])
 def handleIndex():
