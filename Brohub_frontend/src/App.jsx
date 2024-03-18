@@ -4,7 +4,7 @@ import Landing from './components/Main/Landing'
 
 const App = () => {
   return (
-    <div className='w-full h-full bg-zinc-900 text-white overflow-y-hidden'>
+    <div className='w-full h-full bg-zinc-900 text-white'>
       <Navbar/>
       <Landing/>
     </div>
