@@ -7,8 +7,6 @@ import json
 app = Flask(__name__)
 cors = CORS(app)
 
-
-
 @app.route("/image/<filename>")
 def get_image(filename):
     img_path = 'imgs'
