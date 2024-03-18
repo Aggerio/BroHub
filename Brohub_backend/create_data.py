@@ -268,31 +268,31 @@ import random
 
 #create  fake hobbies
 
-men_hobbies = [
-"Fishing",
-"Woodworking",
-"Cycling",
-"Golfing",
-"Hunting",
-"Home Brewing",
-"Grilling and Barbecuing",
-"Watching Sports",
-"Hiking and Camping",
-"Automotive Restoration"
-]
+# men_hobbies = [
+# "Fishing",
+# "Woodworking",
+# "Cycling",
+# "Golfing",
+# "Hunting",
+# "Home Brewing",
+# "Grilling and Barbecuing",
+# "Watching Sports",
+# "Hiking and Camping",
+# "Automotive Restoration"
+# ]
 
-conn = sqlite3.connect('brohub.db')
-cursor = conn.cursor()
-for i in  range(10):
-    x = 3
-    for j in range(x):
-        hobby = random.choice(men_hobbies)
-        cursor.execute('''INSERT OR IGNORE INTO hobbies(id, hobby) values (?,?)''', (i,hobby))
+# conn = sqlite3.connect('brohub.db')
+# cursor = conn.cursor()
+# for i in  range(10):
+#     x = 3
+#     for j in range(x):
+#         hobby = random.choice(men_hobbies)
+#         cursor.execute('''INSERT OR IGNORE INTO hobbies(id, hobby) values (?,?)''', (i,hobby))
 
 
-# Commit the changes
-conn.commit()
+# # Commit the changes
+# conn.commit()
 
-# Close the connection
-conn.close()
+# # Close the connection
+# conn.close()
 

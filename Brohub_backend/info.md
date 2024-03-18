@@ -15,4 +15,4 @@ Created tables -->
 - [x] events
 - [x] groups
 - [x] posts
-- [ ] hobbies
+- [x] hobbies
