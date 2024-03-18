@@ -1,13 +1,13 @@
 import React from "react";
 
-function PostCard() {
+function PostCard( {image_id, title, content }) {
     return (
       <article className="flex flex-col px-14 pt-5 mt-28 max-w-full bg-white rounded-2xl shadow-sm w-[840px] max-md:px-5 max-md:mt-10">
         <div className="flex gap-5 justify-between w-full max-md:flex-wrap max-md:max-w-full">
           <div className="flex gap-3 justify-center">
             <img
               loading="lazy"
-              src=""
+              src={"http://127.0.0.1:5000/image/" + image_id}
               alt="Author avatar"
               className="shrink-0 my-auto w-9 aspect-square"
             />
@@ -21,13 +21,15 @@ function PostCard() {
           </button>
         </div>
         <h2 className="mt-8 text-2xl font-semibold text-black max-md:max-w-full">
-          The thrills of Dakar Rally.
+          {/* The thrills of Dakar Rally. */}
+          {title}
         </h2>
         <p className="self-start mt-4 text-base text-black max-md:max-w-full">
-          The Dakar Rally is an annual off-road endurance event that challenges
+          {/* The Dakar Rally is an annual off-road endurance event that challenges
           competitors to traverse thousands of kilometers through harsh terrain,
           including deserts, mountains, and dunes, testing their skill and
-          resilience.{" "}
+          resilience.{" "} */}
+          {content}
         </p>
       </article>
     );

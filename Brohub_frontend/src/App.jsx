@@ -1,4 +1,3 @@
-import Navbar from "./components/Main/Navbar";
 import Landing from "./components/Main/Landing";
 import ProfilePage from "./components/Files/Merge";
 // import ArticleCard from "./components/Files/ArticleCard";
@@ -19,6 +18,7 @@ const App = () => {
           <Route path="/events" element={<Feed/>}></Route>
           <Route path="/chat" element={<QuickChat/>}></Route>
           <Route path="/profile" element={<ProfilePage/>}></Route>
+          <Route path="/profile/:id" element={<ProfilePage/>}></Route>
           <Route path="/onboarding" element={<Onboarding/>}></Route>
         </Routes>
       </Router>
