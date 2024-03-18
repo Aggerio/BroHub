@@ -1,5 +1,23 @@
 import sqlite3
 
+#return the details of a post 
+def post_info(id:int):
+    conn = sqlite3.connect('brohub.db')
+    cursor = conn.cursor()
+
+    cursor.execute("SELECT * FROM posts WHERE id = ?", (id,))
+    post = {}
+    temp_post = cursor.fetchone()
+    post['id'] = temp_post[0]
+    post['name'] = temp_post[1]
+    post['description'] = temp_post[2]
+    post['people_liked'] = temp_post[3]
+    post['group_name'] = temp_post[4]
+    post['image_id'] = temp_post[5]
+
+    return post
+
+
 # return the details of the personal page 
 def personal_page(id:int):
     pass
