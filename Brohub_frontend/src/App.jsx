@@ -2,7 +2,6 @@ import React from 'react'
 import Navbar from './components/Main/Navbar'
 import Landing from './components/Main/Landing'
 import { Animate } from './components/Main/Animate'
-import Profile from './components/Files/Profile'
 
 const App = () => {
   return (
@@ -10,6 +9,7 @@ const App = () => {
       <Navbar/>
       <Landing/>
       <Animate/>
+      
     </div>
   )
 }
