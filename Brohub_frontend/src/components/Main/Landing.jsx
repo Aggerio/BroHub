@@ -1,8 +1,12 @@
 // import React from 'react';
 import { FaArrowUpLong } from "react-icons/fa6";
+import { Animate } from "./Animate";
+import Navbar from "./Navbar";
 const Landing = () => {
     return (
-        <div className='w-full h-screen bg-zinc-900 pt-1'>
+        <div className='w-full h-screen pt-1  bg-zinc-900 text-white'>
+
+            <Navbar />
             <div className="str mt-40 px-20">
                 {["Dive Into", "The World OF", "Your Community"].map((item, index) => {
                     return <div className="masker" key = {index}>
@@ -32,6 +36,7 @@ const Landing = () => {
                     </div>
                 </div>
             </div>
+            <Animate />
         </div>
     )
 }

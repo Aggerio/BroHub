@@ -1,22 +1,29 @@
-import React from 'react'
-import Navbar from './components/Main/Navbar'
-import Landing from './components/Main/Landing'
-import { Animate } from './components/Main/Animate'
-import Merge from './components/Files/Merge'
-import ArticleCard from './components/Files/ArticleCard'
-import Message from './components/Main/Message'
-import ChatComponent from './components/Main/ChatComponent'
-import Onboarding from './components/Files/Onboarding'
-import Feed from './components/Files/Feed'
+import Navbar from "./components/Main/Navbar";
+import Landing from "./components/Main/Landing";
+import ProfilePage from "./components/Files/Merge";
+// import ArticleCard from "./components/Files/ArticleCard";
+import QuickChat from "./components/Main/ChatComponent";
+import Onboarding from "./components/Files/Onboarding";
+import Feed from "./components/Files/Feed";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 const App = () => {
   return (
-    <div className='w-full h-full bg-zinc-900 text-white overflow-hidden'>
-      <Navbar/>
-      <Landing/>
-      <Animate />
-    </div>
-  )
-}
+    <div className="">
 
-export default App
+      <Router>
+        <Routes>
+          <Route path="/" element={<Landing/>}></Route>
+          <Route path="/home" element={<Landing/>}></Route>
+          <Route path="/feed" element={<Feed/>}></Route>
+          <Route path="/events" element={<Feed/>}></Route>
+          <Route path="/chat" element={<QuickChat/>}></Route>
+          <Route path="/profile" element={<ProfilePage/>}></Route>
+          <Route path="/onboarding" element={<Onboarding/>}></Route>
+        </Routes>
+      </Router>
+    </div>
+  );
+};
+
+export default App;

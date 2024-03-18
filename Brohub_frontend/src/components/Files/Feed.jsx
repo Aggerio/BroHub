@@ -1,10 +1,20 @@
-import React from "react";
 import FeedNav from "./FeedNav";
 import { FaHome } from "react-icons/fa";
 import PostCard from "./PostCard";
 import SmallProfile from "./SmallProfile";
+import { useState, useEffect } from "react";
 
 const Feed = () => {
+
+  const [feed_posts, setFeedPosts] = useState();
+
+  useEffect(() => {
+
+    
+
+  }, []);
+
+
   return (
     <>
       <FeedNav />

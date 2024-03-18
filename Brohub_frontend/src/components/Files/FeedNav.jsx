@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from "react";
 import { FaHome } from "react-icons/fa";
 function FeedNav() {
   return (
@@ -11,24 +10,32 @@ function FeedNav() {
           <ul className="menu text-[black] pb-[18px] list-none">
             <li className="float-left flex items-center text-xl font-thin mr-[45px];
   text-shadow: 1px 1px 1px gray">
+              <a href="/home">
               <FaHome />
               <span className="home shadow-none z-[100] cursor-pointer ml-2">Home</span>
+              </a>
             </li>
             <li className="float-left flex items-center text-xl font-thin mr-[45px];
   text-shadow: 1px 1px 1px gray">
+              < a href="/feed">
               <FaHome />
               <span className="feed text-[#2ED29D] shadow-none z-[100] cursor-pointer ml-2;
   text-shadow: none">Feed</span>
+              </a>
             </li>
             <li className="float-left flex items-center text-xl font-thin mr-[45px];
   text-shadow: 1px 1px 1px gray">
+              <a href="/events">
               <FaHome />
               <span className="events shadow-none z-[100] cursor-pointer ml-2">Events</span>{" "}
+              </a>
             </li>
             <li className="float-left flex items-center text-xl font-thin mr-[45px];
   text-shadow: 1px 1px 1px gray" >
+              <a href='/chat'>
               <FaHome />
               <span className="chat shadow-none z-[100] cursor-pointer ml-2">Chat</span>{" "}
+              </a>
             </li>
           </ul>
         </div>
