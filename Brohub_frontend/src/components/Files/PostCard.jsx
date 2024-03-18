@@ -1,4 +1,3 @@
-import React from "react";
 
 function PostCard( {image_id, title, content }) {
     return (

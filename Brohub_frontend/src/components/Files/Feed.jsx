@@ -8,12 +8,12 @@ import axios from "axios";
 const Feed = () => {
   const [feed_posts, setFeedPosts] = useState([]);
   const [feed_events, setFeedEvents] = useState([]);
-  const [location, setLocation] = useState();
+  const [location, setLocation] = useState('');
 
   useEffect(() => {
     const location = window.location.pathname.split("/").pop();
     setLocation(location);
-    if (location == "posts") {
+    if (location == "feed") {
       axios
         .get(`http://127.0.0.1:5000/posts`)
         .then((response) => {
@@ -55,7 +55,7 @@ const Feed = () => {
               </p>
             </div>
           </div>
-          {location == "posts" ? (
+          {(location == "feed") ? (
             <div>
               {feed_posts.map((item, index) => {
                 return (
@@ -76,7 +76,7 @@ const Feed = () => {
             return (
               <div key={index}>
                 <PostCard
-                  image_id={item.image_id}
+                  image_id={item.image_id }
                   title={item.title}
                   content={item.title}
                 />
