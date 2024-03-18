@@ -1,4 +1,3 @@
-import React from 'react';
 import Profile from '../Files/Profile';
 import PostCard from './PostCard';
 
