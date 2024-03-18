@@ -14,5 +14,5 @@ Created tables -->
 - [x] profiles
 - [x] events
 - [x] groups
-- [ ] posts
+- [x] posts
 - [ ] hobbies
